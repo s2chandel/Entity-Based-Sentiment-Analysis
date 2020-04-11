@@ -314,7 +314,7 @@ def sentiment_scores(json):
 app = Flask(__name__)
 
 @app.route('/ping', methods=['GET'])
-@app.route('/', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def sentiment_analysis():
 
     if flask.request.content_type == 'application/json':
