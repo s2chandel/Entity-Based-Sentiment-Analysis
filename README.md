@@ -10,7 +10,7 @@ Run flask HTTP server
 
 ## Request Body : 
     ```json
-    {"sentence":<"Enter your Sentence">, "entity":<"enter the entity">}
+    {"sentence":<"Enter the list of Sentences">, "entity":<"enter the entities list">}
     ```
 ## Response from the model: 
     ```json
