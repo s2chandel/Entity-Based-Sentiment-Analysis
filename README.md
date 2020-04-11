@@ -12,16 +12,19 @@ Run flask HTTP server
     ```json
     {"sentence":<"Enter the list of Sentences">, "entity":<"enter the entities list">}
     ```
-## Response from the model: 
+## Inference from the model: 
     ```json
-      {'Entity': 'movies',
+    {"sentence":["the website was great", "the movie was good but I didn't like it"], "entity":["website","movie"]}
+    ```
+    ```json
+    [{'Entity': 'website',
       'Sentence': 'the website was great',
-      'pred_prob': array([-5.093779  , -0.00615368], dtype=float32),
-      'sentiment': 'Positive'},
-     {'Entity': 'movies',
-      'Sentence': 'the movie was great',
-      'pred_prob': array([-5.419831e+00, -4.437718e-03], dtype=float32),
-      'sentiment': 'Positive'}   
+      'pred_prob': array([-0.6650544, -0.722052 ], dtype=float32),
+      'sentiment': 'Negative'},
+     {'Entity': 'movie',
+      'Sentence': "the movie was good but I didn't like it",
+      'pred_prob': array([-0.6282205 , -0.76258385], dtype=float32),
+      'sentiment': 'Negative'}]  
   ```
 
 
